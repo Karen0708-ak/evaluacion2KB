@@ -8,16 +8,15 @@
         <meta content="" name="keywords">
         <meta content="" name="description">
        
-
+        <!--IMportando sweetalert2-->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <!-- Bootstrap JS  -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         
-       
         <!-- Google Maps  -->
         <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNQX31CHvoHAv2mgRTHF2C0-Hf5K2uOcg&callback=initMap">
         </script>
-        
         <!-- Google Web Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +25,6 @@
         <!--IMportando sweetalert2-->
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
-
         <!-- Template Stylesheet -->
         <link href="{{asset('css/style.css')}}" rel="stylesheet">
 
