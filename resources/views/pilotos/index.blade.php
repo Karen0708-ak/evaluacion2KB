@@ -26,15 +26,14 @@
                 <tbody>
                     @forelse($piloto as $pilotoTemporal)
                     <tr>
-                        <td>{{ $pilotoTemporal->propietario }}</td>
-                        <td>{{ $pilotoTemporal->clave }}</td>
+                        <td>{{ $pilotoTemporal->cedula }}</td>
+                        <td>{{ $pilotoTemporal->nombre }}</td>
                         <td>Latitud: {{ $pilotoTemporal->latitud1 }}<br>Longitud: {{ $pilotoTemporal->longitud1 }}<br>Hora: {{ $pilotoTemporal->hora1 }}</td>
                         <td>Latitud: {{ $pilotoTemporal->latitud2 }}<br>Longitud: {{ $pilotoTemporal->longitud2 }}<br>Hora: {{ $pilotoTemporal->hora2 }}</td>
                         <td>Latitud: {{ $pilotoTemporal->latitud3 }}<br>Longitud: {{ $pilotoTemporal->longitud3 }}<br>Hora: {{ $pilotoTemporal->hora3 }}</td>
                         <td class="text-center">
-                            <a href="{{ route('pilotos.edit', $pilotoTemporal->id) }}" class="btn btn-sm btn-primary me-1">Editar</a>
 
-                            <form action="{{ route('pilotos.destroy', $pilotosTemporal->id) }}" method="POST" class="d-inline">
+                            <form action="{{ route('pilotos.destroy', $pilotoTemporal->id) }}" method="POST" class="d-inline">
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="btn btn-sm btn-danger"

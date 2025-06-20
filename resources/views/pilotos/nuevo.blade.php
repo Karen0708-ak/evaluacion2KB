@@ -1,7 +1,7 @@
 @extends('layout.app')
 
 @section('contenido')
-<h1 class="text-white" >Registrar nuevo Piloto</h1>
+<h1>Registrar nuevo Piloto</h1>
 <div clas='row'>
     <div class="col-md-2"></div>
     <div class="col-md-8">
@@ -80,7 +80,7 @@
                 </button>
                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <button type="button" class="btn btn-primary" onclick="graficarPredio();">
-                    Graficar Predio
+                    Graficar Ruta
                 </button>
             </center>
         </form>

@@ -63,8 +63,7 @@ class PilotoController extends Controller
     public function edit(string $id)
     {
         //
-        $piloto = Piloto::findOrFail($id); 
-        return view('pilotos.editar', compact('piloto'));
+       
     }
 
     /**
@@ -81,5 +80,9 @@ class PilotoController extends Controller
     public function destroy(string $id)
     {
         //
+        $piloto = Piloto::findOrFail($id);
+        $piloto->delete();
+        return redirect()->route('pilotos.index')->with('success', 'Piloto eliminado correctamente');
+        
     }
 }
