@@ -130,10 +130,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
-                        <a href="{{ route('Lugares.index') }}" class="nav-item nav-link active">Listado de Lugares</a>
+                        <!--<a href="{{ route('Lugares.index') }}" class="nav-item nav-link active">Listado de Lugares</a>
                         <a href="{{ route('Lugares.create') }}" class="nav-item nav-link">Crear Lugar</a>
                         <a href="{{ url ('Lugares/mapa') }}" class="nav-item nav-link">Ver mapa de los lugares</a>
-                    </div>
+                    </div>-->
                 </div>
             </nav>
         <!-- Carousel Container -->
