@@ -28,9 +28,9 @@
                     <tr>
                         <td>{{ $pilotoTemporal->propietario }}</td>
                         <td>{{ $pilotoTemporal->clave }}</td>
-                        <td>Latitud: {{ $pilotoTemporal->latitud1 }}<br>Longitud: {{ $predioTemporal->longitud1 }}<br>Hora: {{ $pilotoTemporal->hora1 }}</td>
-                        <td>Latitud: {{ $pilotoTemporal->latitud2 }}<br>Longitud: {{ $predioTemporal->longitud2 }}<br>Hora: {{ $pilotoTemporal->hora2 }}</td>
-                        <td>Latitud: {{ $pilotoTemporal->latitud3 }}<br>Longitud: {{ $predioTemporal->longitud3 }}<br>Hora: {{ $pilotoTemporal->hora3 }}</td>
+                        <td>Latitud: {{ $pilotoTemporal->latitud1 }}<br>Longitud: {{ $pilotoTemporal->longitud1 }}<br>Hora: {{ $pilotoTemporal->hora1 }}</td>
+                        <td>Latitud: {{ $pilotoTemporal->latitud2 }}<br>Longitud: {{ $pilotoTemporal->longitud2 }}<br>Hora: {{ $pilotoTemporal->hora2 }}</td>
+                        <td>Latitud: {{ $pilotoTemporal->latitud3 }}<br>Longitud: {{ $pilotoTemporal->longitud3 }}<br>Hora: {{ $pilotoTemporal->hora3 }}</td>
                         <td class="text-center">
                             <a href="{{ route('pilotos.edit', $pilotoTemporal->id) }}" class="btn btn-sm btn-primary me-1">Editar</a>
 
