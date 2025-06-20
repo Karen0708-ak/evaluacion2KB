@@ -56,8 +56,8 @@
                 </div>
                 <div class="col-lg-4 text-center text-lg-end">
                     <div class="d-inline-flex align-items-center" style="height: 45px;">
-                        <a href="#"><small class="me-3 text-light"><i class="fa fa-user me-2"></i>Register</small></a>
-                        <a href="#"><small class="me-3 text-light"><i class="fa fa-sign-in-alt me-2"></i>Login</small></a>
+                        <a href="{{ route('pilotos.index') }}"><small class="me-3 text-light"><i class="fa fa-user me-2"></i>Listado de pilotos</small></a>
+                        <a href="{{ route('pilotos.create') }}"><small class="me-3 text-light"><i class="fa fa-sign-in-alt me-2"></i>Registrar pilotos</small></a>
                         <div class="dropdown">
                             <a href="#" class="dropdown-toggle text-light" data-bs-toggle="dropdown"><small><i class="fa fa-home me-2"></i> My Dashboard</small></a>
                             <div class="dropdown-menu rounded">
@@ -81,6 +81,16 @@
                     <h1 class="m-0"><i class="fa fa-map-marker-alt me-3"></i>TURISMO</h1>
                     <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
+                <div class="navbar-nav ms-auto py-0" >
+                    <a href="{{ route('pilotos.index') }}" 
+                    class="nav-item nav-link {{ request()->routeIs('pilotos.index') ? 'active ' : '' }}">
+                    Listado de Pilotos
+                    </a>
+                    <a href="{{ route('pilotos.create') }}" 
+                    class="nav-item nav-link {{ request()->routeIs('pilotos.create') ? 'active' : '' }} " >
+                    Registrar Piloto
+                    </a>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
