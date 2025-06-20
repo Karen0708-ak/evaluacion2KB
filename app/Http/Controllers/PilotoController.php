@@ -46,7 +46,7 @@ class PilotoController extends Controller
             'hora3'=> $request->hora3,
         ];
         Piloto::create($datos);
-        return redirect()->route('piloto.index')->with('message', 'Piloto creado exitosamente');
+        return redirect()->route('pilotos.index')->with('message', 'Piloto creado exitosamente');
     }
 
     /**

@@ -9,12 +9,6 @@
         <meta content="" name="description">
        
 
-           <!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.7.1.js" crossorigin="anonymous"></script>
-
-<!-- jQuery Validation -->
-<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
-
         <!-- Bootstrap JS  -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <!--IMportando sweetalert2-->
@@ -29,38 +23,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet"> 
-
-        <!-- Icon Font Stylesheet -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-        <!-- Libraries Stylesheet -->
-        <link href="{{asset('lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
-        <link href="{{asset('lib/lightbox/css/lightbox.min.css')}}" rel="stylesheet">
-       
-
-        <!-- FileInput JS y CSS -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.5.0/css/fileinput.min.css" rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.5.0/js/fileinput.min.js"></script>
-
-        <!-- FileInput idioma español -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.5.0/js/locales/es.min.js"></script>
-         <!-- DataTables (versión compatible) -->
-      <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css">
-      <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
-      <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
-  
-      <!-- Botones de DataTables  -->
-      <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.2/css/buttons.dataTables.min.css">
-      <script src="https://cdn.datatables.net/buttons/2.4.2/js/dataTables.buttons.min.js"></script>
-      <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.html5.min.js"></script>
-      <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.print.min.js"></script>
-  
-      <!-- Librerías para exportación -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
-    
          
 
         <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
@@ -129,30 +91,17 @@
                     <span class="fa fa-bars"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0">
-                        <!--<a href="{{ route('Lugares.index') }}" class="nav-item nav-link active">Listado de Lugares</a>
-                        <a href="{{ route('Lugares.create') }}" class="nav-item nav-link">Crear Lugar</a>
-                        <a href="{{ url ('Lugares/mapa') }}" class="nav-item nav-link">Ver mapa de los lugares</a>
-                    </div>-->
+                    
                 </div>
             </nav>
-        <!-- Carousel Container -->
-        <div class="container-fluid position-relative p-0">
-            <!-- Carousel Start -->
-            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner position-relative">
-                    <div class="carousel-item active">
-                        <img src="{{ asset('img/carousel-2.jpg') }}" class="img-fluid w-100" alt="...">
-                        <div class="position-absolute top-0 start-0 w-100 h-100" 
-                            style="background: rgba(0,0,0,0.5); pointer-events: none;"></div>
-                    </div>
-                </div>
-            </div>
-             <br><br><br><br><br>
-            <div class="position-absolute top-50 start-50 translate-middle w-75 text-center text-white z-3" style=" background-color: rgba(49, 48, 48, 0.7); padding: 20px; border-radius: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">
-                @yield('contenido')
-            </div>
+        
+        <br><br><br><br><br>
+        <div class="container my-5">
+    <div class="bg-dark text-white p-4 rounded shadow" style="background-color: rgba(49, 48, 48, 0.7);">
+            @yield('contenido')
         </div>
+    </div>
+
         <!-- Footer Start -->
         <div class="container-fluid footer py-5">
             <div class="container py-5">

@@ -1,7 +1,7 @@
 @extends('layout.app')
 
 @section('contenido')
-<h1>Registrar nuevo Piloto</h1>
+<h1 class="text-white" >Registrar nuevo Piloto</h1>
 <div clas='row'>
     <div class="col-md-2"></div>
     <div class="col-md-8">
@@ -22,7 +22,7 @@
                     <label for=""><b>Longitud</b></label><br>
                     <input type="number" name="longitud1" id="longitud1" class="form-control" readonly placeholder="Seleccione la longitud en el mapa">
                     <label for=""><b>Hora</b></label><br>
-                    <input type="time" name="hora1" id="hora1" class="form-control" readonly placeholder="Ingrese la hora">
+                    <input type="time" name="hora1" id="hora1" class="form-control" placeholder="Ingrese la hora">
                     <br>
                 </div>
                 <div class="col-md-7">
@@ -39,7 +39,7 @@
                     <label for=""><b>Longitud</b></label><br>
                     <input type="number" name="longitud2" id="longitud2" class="form-control" readonly placeholder="Seleccione la longitud en el mapa">
                     <label for=""><b>Hora</b></label><br>
-                    <input type="time" name="hora2" id="hora2" class="form-control" readonly placeholder="Ingrese la hora">
+                    <input type="time" name="hora2" id="hora2" class="form-control" placeholder="Ingrese la hora">
                     <br>
                 </div>
                 <div class="col-md-7">
@@ -56,7 +56,7 @@
                     <label for=""><b>Longitud</b></label><br>
                     <input type="number" name="longitud3" id="longitud3" class="form-control" readonly placeholder="Seleccione la longitud en el mapa">
                     <label for=""><b>Hora</b></label><br>
-                    <input type="time" name="hora3" id="hora3" class="form-control" readonly placeholder="Ingrese la hora">
+                    <input type="time" name="hora3" id="hora3" class="form-control" placeholder="Ingrese la hora">
                     <br>
                 </div>
                 <div class="col-md-7">

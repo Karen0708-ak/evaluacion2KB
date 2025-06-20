@@ -6,7 +6,7 @@
 <div class="container mt-4">
     <div class="mx-auto" style="max-width: 1000px;">
         <div class="text-right">
-            <a href="{{ route('predios.create') }}" class="btn btn-primary">
+            <a href="{{ route('pilotos.create') }}" class="btn btn-primary">
                 Agregar nuevo Piloto
             </a>
         </div>
